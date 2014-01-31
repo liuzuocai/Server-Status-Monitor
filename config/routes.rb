@@ -1,4 +1,9 @@
 ServerStatusMonitor::Application.routes.draw do
+  get "site/index"
+
+  #The route to the index page (this is a one page app)
+  root :to => "site#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
