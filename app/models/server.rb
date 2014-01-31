@@ -1,7 +1,8 @@
 class Server < ActiveRecord::Base
   attr_accessible :address, :description, :name
 
-  belongs_to :statuses, :post
+  belongs_to :status
+  belongs_to :post
   has_many :messages
 
   validates :name,        presence: true

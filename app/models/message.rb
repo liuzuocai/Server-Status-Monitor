@@ -1,7 +1,8 @@
 class Message < ActiveRecord::Base
-  attr_accessible :content, :date, :server_id, :title
+  attr_accessible :content, :date, :title
 
-  belongs_to :server, :post
+  belongs_to :server
+  belongs_to :post
 
   validates :title,     presence: true
   validates :date,      presence: true

@@ -1,4 +1,7 @@
 ServerStatusMonitor::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   get "site/index"
 
   #The route to the index page (this is a one page app)
