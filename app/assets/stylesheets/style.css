@@ -205,3 +205,8 @@ footer {
 img { 
 	border:none;
 }
+
+.date_post{
+	border: 0;
+	border-bottom: 1px dashed #ccc;
+}
