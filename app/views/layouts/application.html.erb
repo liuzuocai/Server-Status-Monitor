@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ServerStatusMonitor</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<title>ServerStatusMonitor</title>
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+	<header>
+		<div class="container">
+			<div class="logo"><%= image_tag("boldlogo.png", height: '172', width: '350') %></div>
+		</div>
+	</header>
+
+	<div class="content">   
+
+		<div id="tab-container" class="tab-container">
+
+			<ul class='etabs'>
+				<li class='tab welcome'><a href="#tabs1-welcome">&nbsp;</a></li>
+				<li class='tab first'><a href="#tabs1-boldapps"><%= image_tag("logo-boldapps.png", height: '49', width: '190') %> </a></li>
+				<li class='tab'><a href="#tabs1-boldcommerce"><%= image_tag("logo-boldcommerce.png", height: '49', width: '250') %> </a></li>
+				<li class='tab'><a href="#tabs1-communityinfo"><%= image_tag("logo-communityinfo.png", height: '49', width: '213') %></a></li>
+				<li class='tab'><a href="#tabs1-cisites"><%= image_tag("logo-cisites.png", height: '49', width: '99') %></a></li>
+			</ul>
+			<div class="container">
+
+				<%= yield %>
+
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+
+		<div class="container">
+			<div class="copyright">&copy;2013 Bold Innovation Group Ltd.  All Rights Reserved</div>
+		</div>
+
+
+
+		<%= javascript_include_tag "application" %>
+    	<!-- Bootstrap core JavaScript
+    	================================================== -->
+    	<!-- Placed at the end of the document so the pages load faster -->
+    	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    </footer>
 
 </body>
 </html>

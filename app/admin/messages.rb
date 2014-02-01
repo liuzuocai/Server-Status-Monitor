@@ -1,8 +1,8 @@
 ActiveAdmin.register Message do
 
-   form do |f|
+  form do |f|
     f.inputs do
-      f.input :server
+      f.input :server, as: :check_boxes
       f.input :title
       f.input :content
       f.input :date, :as => :just_datetime_picker
