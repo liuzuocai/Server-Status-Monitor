@@ -10,5 +10,9 @@ ActiveAdmin.register Post do
     f.buttons
   end
 
+  collection_action :twitter, :method => :post do
+	  client.update("Server Status has been updated")
+	end
+
 
 end
