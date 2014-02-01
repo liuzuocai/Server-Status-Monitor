@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  attr_accessible :date, :content, :title
+  attr_accessible :date, :content, :title, :server_id
 
   belongs_to :server
   has_many :messages
