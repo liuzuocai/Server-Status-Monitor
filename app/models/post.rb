@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
   attr_accessible :content, :title
 
-  has_many :servers
+  belongs_to :server
   has_many :statuses
   has_many :messages
 
