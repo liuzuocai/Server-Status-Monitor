@@ -23,6 +23,9 @@ end
 gem "jquery-rails", "< 3.0.0"
 gem "just-datetime-picker"
 gem 'activeadmin'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'twitter'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
