@@ -21,6 +21,7 @@ group :assets do
 end
 
 gem "jquery-rails", "< 3.0.0"
+gem "just-datetime-picker"
 gem 'activeadmin'
 
 # To use ActiveModel has_secure_password
