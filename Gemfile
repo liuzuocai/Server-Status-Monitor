@@ -6,14 +6,10 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # Devlopment gems
-group :development, :test do
   gem 'sqlite3'
-end
 
 # Production gems
-group :production do
-  gem 'mysql'
-end
+  gem 'mysql2'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -27,6 +23,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'coffee-script-source', '~> 1.4.0'
 gem "jquery-rails", "< 3.0.0"
 gem "just-datetime-picker"
 gem 'activeadmin'
