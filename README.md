@@ -4,6 +4,8 @@ Server-Status-Monitor
 
 <p>This rails application is a simple content management system that allows you to notify your customers of server shortages and issues. This would idealy be placed off site so if your main servers were down you could update this application and notify your users.</p>
 
+<p>You can check out our working version of this right <a href="http://107.170.26.211/">here</a>.</p>
+
 <p>This project uses active admin as the admin backend. The default admin user login is:</p>
 <pre>
 Username: admin@example.com
